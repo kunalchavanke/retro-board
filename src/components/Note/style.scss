@@ -1,0 +1,42 @@
+.note {
+  width: 120px;
+  height: 100px;
+  padding: 5px;
+  margin: 5px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  overflow: auto;
+
+  &__body {
+
+    &__text {
+      font-weight: 600;
+    }
+
+    &__input {
+      font-weight: 800;
+    }
+
+  }
+
+  &__button-delete {
+    display: none;
+    width: 0;
+    position: relative;
+    right: 32px;
+    top: 87px;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      display: inline;
+    }
+  }
+
+  &:focus+&__button-delete,
+  &:hover+&__button-delete,
+  &:active+&__button-delete {
+    display: inline;
+  }
+}

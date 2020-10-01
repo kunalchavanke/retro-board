@@ -1,0 +1,41 @@
+.section {
+  background: lightgray;
+  width: 45vw;
+  margin: 10px 0;
+  height: 40vh;
+  min-width: 150px;
+  overflow: auto;
+  position: relative;
+
+  &__heading {
+    color: red;
+    margin: 5px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: absolute;
+  }
+
+  &__button {
+    position: sticky;
+    height: 40px;
+    width: 40px;
+    float: right;
+    top: 80%;
+    margin: 0 20px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    background-color: lightcoral;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 3pt 1pt darkgrey;
+    }
+  }
+}
